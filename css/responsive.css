@@ -38,7 +38,7 @@
 
     .site-header {
         width: 100vw;
-        background-color: #fff;
+        background-color: #fff !important;
         position: fixed;
         top: 0;
         box-shadow: 0 0 12px 0px rgb(0 0 0 / 15%)
@@ -256,7 +256,71 @@
         margin-bottom: 25px;
     }
 
-    
+    .right-aside {
+        display: none;
+    }
+
+    .news-page__wrapper .news__item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .news-page__wrapper .news__data {
+        margin-top: 15px;
+    }
+
+    .news-page__wrapper .news__text {
+        margin-top: 0;
+    }
+
+    .news-item__title {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .news-card__image {
+        width: 600px;
+        height: 350px;
+        margin-bottom: 30px;
+    }
+
+    .news-card {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .additional-news-list {
+        display: none;
+    }
+
+    .title-wrapper {
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    .directions-title  {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .main-directions__container {
+        padding-top: 40px;
+    }
+
+    .main-directions__container   .img-wrapper {
+        width: 600px;
+    }
+
+    .main-directions__container   .img-wrapper img {
+        width: 100%;
+        height: auto;
+    }
 
 }
 
@@ -301,4 +365,38 @@
         width: 100px;
         height: 60px;
     }
+
+    .news-page__wrapper .news__text {
+        text-align: justify;
+    }
+
+    .news-page__wrapper .news__link {
+        text-align: justify;
+    }
+
+    .news-page__wrapper .news__item-info {
+        margin-left: 0;
+    }
+
+    .news-item__title {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .main-directions__container   .img-wrapper {
+        width: 300px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .news-card__image {
+        width: 330px;
+        height: 200px;
+    }
+
+    .directions-title {
+        font-size: 20px;
+    }
+
 }

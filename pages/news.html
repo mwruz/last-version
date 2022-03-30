@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yangiliklar</title>
+
+    <!-- Styles  -->
+    <link rel="stylesheet" href="../slick/slick/slick-theme.css">
+    <link rel="stylesheet" href="../slick/slick/slick.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css//responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+ 
+
+    .site-header {
+        background: linear-gradient(to top, rgba(48, 63, 149,0.6), rgb(48, 63, 149,0.7) );
+    }
+
+    @media screen and (max-width: 850px) {
+        .site-header .humburger-item{
+            background-color: #fff !important;
+        }
+
+        .site-header .site-logo span {
+            color: #fff;
+        }
+
+    }
+
+    .site-nav__dropdown-menu {
+        box-shadow: rgba(48, 63, 149,0.3) 0px 4px 8px 0px;
+    } 
+
+    .second-dropdown {
+        box-shadow: rgba(48, 63, 149,0.3) 0px 4px 8px 0px;
+    }
+
+    .option-langs {
+        box-shadow: rgba(48, 63, 149,0.3) 0px 4px 8px 0px;
+        color: #303F95;
+    }
+
+    
+
+</style>
+<body class="page">
+
+      <!-- SITE HEADER  -->
+
+      <header class="site-header">
+        <div class="site-header__container">
+            
+            <div class="site-header__top container ">
+                <a href="../index.html" class="site-logo">
+                    <img src="../images/gerb.png#" alt="gerb" width="80" height="80">
+                    <span>O`zbekiston Respublikasi Suv xo`jaligi vazirligi</span>
+                </a>
+
+                <div class="site-header__phone-numbers">
+                    <a style="display: flex;" href="#" class="phone-number">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Ishonch telefoni: +998991234567</span>
+                    </a>
+                    <a style="display: flex;" href="#" class="phone-number">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Devonxona: +998991234567</span>
+                    </a>
+                </div>
+
+                <div class="site-header__socials">
+                    <a href="#" id="telegram-icon">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="#" id="facebook-icon">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="#" id="youtube-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" id="instagram-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <button class="site-header__login">
+                        Kirish <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    </button>
+
+                    <button style="display: none; width: 35px; height: 20px; background-color: transparent; border: none;" class="humburger-btn">
+                        <div style="display: flex; flex-direction: column;">
+                            <div class="humburger-item" style="background-color: #303F95; height: 2px; width: 15px; margin-bottom: 7px;"></div>
+                            <div class="humburger-item" style="background-color: #303F95; height: 2px; width: 25px; margin-bottom: 7px;"></div>
+                            <div class="humburger-item" style="background-color: #303F95; height: 2px; width: 35px;"></div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="site-header__popup">
+                <div class="site-header__popup-wrapper ">
+                    <div class="site-header__popup-main">
+                        <button class="popup-close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <header class="popup-header">
+                            <img src="../images/gerb.png" alt="gerb" width="60" height="60">
+                            <h3 class="popup-header__title">O'zbekiston Resublikasi Suv xo'jaligi vazirligi</h3>
+                        </header>
+
+                        <form action="/" class="popup-form">
+                            <span class="popup-form__title">Kirish</span>
+                            <input type="text" placeholder="Loginni kiriting">
+                            <input type="password" placeholder="Parolni kiriting">
+                            <input type="submit" value="Kirish">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="site-nav">
+                <div class="container site-nav__container">
+                    <ul class="site-nav__list list">
+                        <li class="site-nav__item">
+                            <a href="#" class="site-nav__link">Vazirlik <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="site-nav__dropdown-menu list">
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fisrt item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">second item <i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="site-nav__dropdown-menu second-dropdown list">
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">first item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">second item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                            </ul>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#" class="site-nav__link">Yangiliklar <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="site-nav__dropdown-menu list">
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fisrt item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">second item <i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="site-nav__dropdown-menu second-dropdown list">
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">first item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">second item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                            </ul>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#" class="site-nav__link">Mediagalereya <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="site-nav__dropdown-menu list">
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fisrt item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">second item <i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="site-nav__dropdown-menu second-dropdown list">
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">first item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">second item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                            </ul>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#" class="site-nav__link">Ma'lumot <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="site-nav__dropdown-menu list">
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fisrt item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">second item <i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="site-nav__dropdown-menu second-dropdown list">
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">first item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">second item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                            </ul>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#" class="site-nav__link">Hujjatlar <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="site-nav__dropdown-menu list">
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fisrt item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">second item <i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="site-nav__dropdown-menu second-dropdown list">
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">first item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">second item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                            </ul>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#" class="site-nav__link">Interaktiv xizmatlar <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="site-nav__dropdown-menu list">
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fisrt item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">second item <i class="fa-solid fa-angle-right"></i></a>
+                                    <ul class="site-nav__dropdown-menu second-dropdown list">
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">first item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">second item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">third item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fourth item</a></li>
+                                <li class="dropdown-item"><a href="#" class="dropdown-link">fifth item</a></li>
+                            </ul>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="#" class="site-nav__link">Bog'lanish</a>
+                        </li>
+                    </ul>
+    
+                    <div class="site-nav__language">
+                        <span class="default-lang">O'zbek <i class="fa-solid fa-angle-down"></i></span>
+                        <div class="option-langs">
+                            <span class="option-lang">Руский</span>
+                            <span class="option-lang">English</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+   
+
+    <!-- END OF SITE HEADER  -->
+
+
+<div class="news-title__wrapper">
+    <h1 class="news-title container">новости</h1>
+</div>    
+
+<div class="container news-page__wrapper">
+    
+<ul class="news-list ">
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+    <li class="news__item">
+        <img class="news__image" src="../images/news-img.png" alt="news image" width="360" height="214">
+        <div class="news__item-info">
+            <a href="./news-item.html" class="news__link">На чтениях-2021 пройдет обсуждение проектов смешанного обучения и управлению удаленной работой</a>
+            <p class="news__text">
+                На Пастуховских чтениях-2021 пройдет обсуждение проектов рекомендаций по организации смешанного обучения и управлению удаленной работой – по формированию системы мотивации научно...
+            </p>
+            <data class="news__data">20.10.2021</data>
+        </div>
+    </li>
+
+    <div class="news__btn-wrapper">
+        <button class="news__more-btn">Ko'proq yangiliklar</button>
+    </div>
+</ul>
+
+<aside class="right-aside">
+    <ul class="aside__list list">
+        <li class="aside__item aside__item-first">
+            Yangiliklar
+        </li>
+        <li class="aside__item"><a href="#" class="aside__link aside__link-active">
+            Aside item
+        </a></li>
+        <li class="aside__item"><a href="#" class="aside__link">
+            Aside item
+        </a></li>
+        <li class="aside__item"><a href="#" class="aside__link">
+            Aside item
+        </a></li>
+        <li class="aside__item"><a href="#" class="aside__link aside__link-active">
+            Aside item
+        </a></li>
+        <li class="aside__item"><a href="#" class="aside__link">
+            Aside item
+        </a></li>
+        <li class="aside__item"><a href="#" class="aside__link">
+            Aside item
+        </a></li>
+        <li class="aside__item"><a href="#" class="aside__link">
+            Aside item
+        </a></li>
+    </ul>
+</aside>
+
+</div>
+
+
+<!-- START SITE FOOTER  -->
+
+<section class="site-footer">
+
+    <div class="container site-footer__container">
+        <div class="connection-info">
+            <a href="index.html" class="connection-info__link">
+                <img src="../images/gerb.png" alt="gerb" width="80" height="80">
+                <span>O`zbekiston Respublikasi Suv xo`jaligi vazirligi</span>
+            </a>
+
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="#" class="footer-link">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Manzil: 100140, Toshkent sh. Qorasuv 4-daha 11<sup>a</sup>-uy</span>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">
+                        <i class="fa-solid fa-bus"></i>
+                        <span>89, 63, 25 yo‘nalishli avtobuslarning «Qorasuv-2» bekati</span>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <span>Ishonch telefoni: 1234</span>
+                    </a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <span>Devonxona: (+998 71) 222-33-44</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="footer__main-directions">
+            <h3 class="footer__section-title">ASOSIY YO‘NALISHLAR</h3>
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__main-directions">
+            <h3 class="footer__section-title">VAZIRLIK</h3>
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link"><i class="fa-solid fa-chevron-right"></i> Main dicections</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer__connect">
+            <h3 class="footer__section-title">YANGILIKLARGA OBUNA BO‘LISH</h3>
+            <form action="">
+                <input type="email" placeholder="Email manzilingizni kiriting:">
+                <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- END OF SITE FOOTER  -->
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/fontawesome.min.js" integrity="sha512-PoFg70xtc+rAkD9xsjaZwIMkhkgbl1TkoaRrgucfsct7SVy9KvTj5LtECit+ZjQ3ts+7xWzgfHOGzdolfWEgrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
