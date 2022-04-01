@@ -710,6 +710,7 @@ h1 {
     font-size: 16px;
     margin-right: 5px;
     font-weight: 600;
+    margin-top: 30px;
 }
 
 .site-hero .slick-active::before {
@@ -1592,3 +1593,34 @@ h1 {
     opacity: 1;
 }
 
+
+/* ABOUT PAGE  */
+
+
+.about-content {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-text-wrapper {
+    max-width: 900px;
+    padding: 0 10px;
+}
+
+.page-title {
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #303F95;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page-text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #272727;
+    text-align: justify;
+}
