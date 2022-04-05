@@ -191,3 +191,6 @@ regionPath.forEach((item) => {
 // regionAddress.textContent = mapActiveRegion.address;
 // regionEmail.textContent = mapActiveRegion.email;
 // regionPhone.textContent = mapActiveRegion.phone;
+
+
+
