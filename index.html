@@ -11,6 +11,44 @@
       <link rel = "icon" href = "../images/gerb.png"  type = "image/x-icon">
 
 
+
+      <!-- Gallery  -->
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+      <style>
+
+
+        .item {
+          width: 350px !important;
+          height: 233px !important;
+          transition: .5s ease-in-out;
+        }
+        
+        @media screen and (max-width: 550px) {
+          .item {
+            margin-top: 0;
+          }
+  
+          .gallery-container .row {
+            margin: 0 auto !important;
+            padding-right: 0 !important;
+          }
+  
+        }
+  
+        .item:hover {
+          filter: brightness(80%);
+        }
+  
+      </style>
+
+
+
     <!-- Styles  -->    
     <link rel="stylesheet" href="./slick/slick.css">
     <link rel="stylesheet" href="./slick/slick-theme.css">
@@ -567,75 +605,51 @@
 
         <div class="wrapper">
 
-            <div class="image-wrapper">
-              <img class="main-image" src="https://lipsum.app/id/23/1000x700" alt="">
-            </div>
-        
-            <div class="option-images">
-        
-              <ul class="option-images__list">
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/23/1000x700">
-                      <img src="https://lipsum.app/id/23/250x150" alt="">
+            <div class="container gallery-container">
+
+                <div class="row mt-4">
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="./images/img1.JPG" class="fancybox" data-fancybox="gallery1">
+                      <img src="./images/img1.JPG" width="100%" height="100%">
                     </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/2/1000x700">
-                      <img src="https://lipsum.app/id/2/250x150" alt="">
+                  </div>
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="./images/img-2.JPG" class="fancybox" data-fancybox="gallery1">
+                      <img src="./images/img-2.JPG" width="100%" height="100%">
                     </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/3/1000x700">
-                      <img src="https://lipsum.app/id/3/250x150" alt="">
+                  </div>
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="./images/img-3.JPG" class="fancybox" data-fancybox="gallery1">
+                      <img src="./images/img-3.JPG" width="100%" height="100%">
                     </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/4/1000x700">
-                      <img src="https://lipsum.app/id/4/250x150" alt="">
+                  </div>
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="./images/img-4.JPG" class="fancybox" data-fancybox="gallery1">
+                      <img src="./images/img-4.JPG" width="100%" height="100%">
                     </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/5/1000x700">
-                      <img src="https://lipsum.app/id/5/250x150" alt="">
+                  </div>
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="./images/img-5.JPG" class="fancybox" data-fancybox="gallery1">
+                      <img src="./images/img-5.JPG" width="100%" height="100%">
                     </a>
-                  </li>
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/23/1000x700">
-                      <img src="https://lipsum.app/id/23/250x150" alt="">
+                  </div>
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="./images/img-6.JPG" class="fancybox" data-fancybox="gallery1">
+                      <img src="./images/img-6.JPG" width="100%" height="100%">
                     </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/2/1000x700">
-                      <img src="https://lipsum.app/id/2/250x150" alt="">
-                    </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/3/1000x700">
-                      <img src="https://lipsum.app/id/3/250x150" alt="">
-                    </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/4/1000x700">
-                      <img src="https://lipsum.app/id/4/250x150" alt="">
-                    </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/5/1000x700">
-                      <img src="https://lipsum.app/id/5/250x150" alt="">
-                    </a>
-                  </li>
-              </ul>
-        
-        
-            </div>
+                  </div>
+            
+                  
+            
+                </div>
+            
+              </div>
         
         
         
@@ -650,81 +664,57 @@
 
         <div class="wrapper">
 
-            <div class="image-wrapper">
-                <iframe class="main-video" style="margin: 0 auto;" width="800px" height="500px" src="https://www.youtube.com/embed/qxRGA_vcG7Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        
-            <div class="option-images">
-        
-              <ul class="option-images__list">
-                  <li class="option-image__item">
-                    <a  data-url="https://www.youtube.com/embed/FDEcIGWQoFs">
-                        <iframe width="156" height="100" src="https://www.youtube.com/embed/FDEcIGWQoFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="container gallery-container">
+
+                <div class="row mt-4">
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="https://www.youtube.com/embed/FDEcIGWQoFs" class="fancybox" data-fancybox="gallery1">
+                      <img class="videgallery-image" src="./images/video-img.png" width="100%" height="100%">
                     </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/2/1000x700">
-                        <iframe width="156" height="100" src="https://www.youtube.com/embed/FDEcIGWQoFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="https://www.youtube.com/embed/FDEcIGWQoFs" class="fancybox" data-fancybox="gallery1">
+                      <img class="videgallery-image" src="./images/video-img.png" width="100%" height="100%">
                     </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/3/1000x700">
-                        <iframe width="156" height="100" src="https://www.youtube.com/embed/FDEcIGWQoFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="https://www.youtube.com/embed/FDEcIGWQoFs" class="fancybox" data-fancybox="gallery1">
+                      <img class="videgallery-image" src="./images/video-img.png" width="100%" height="100%">
                     </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/4/1000x700">
-                        <iframe width="156" height="100" src="https://www.youtube.com/embed/FDEcIGWQoFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="https://www.youtube.com/embed/FDEcIGWQoFs" class="fancybox" data-fancybox="gallery1">
+                      <img class="videgallery-image" src="./images/video-img.png" width="100%" height="100%">
                     </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/5/1000x700">
-                        <iframe width="156" height="100" src="https://www.youtube.com/embed/FDEcIGWQoFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="https://www.youtube.com/embed/FDEcIGWQoFs" class="fancybox" data-fancybox="gallery1">
+                      <img class="videgallery-image" src="./images/video-img.png" width="100%" height="100%">
                     </a>
-                  </li>
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/23/1000x700">
-                        <iframe width="156" height="100" src="https://www.youtube.com/embed/FDEcIGWQoFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  </div>
+            
+                  <div class="item col-sm-6 col-md-4 mb-3">
+                    <a href="https://www.youtube.com/embed/FDEcIGWQoFs" class="fancybox" data-fancybox="gallery1">
+                      <img class="videgallery-image" src="./images/video-img.png" width="100%" height="100%">
                     </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/2/1000x700">
-                        <iframe width="156" height="100" src="https://www.youtube.com/embed/FDEcIGWQoFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/3/1000x700">
-                        <iframe width="156" height="100" src="https://www.youtube.com/embed/FDEcIGWQoFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/4/1000x700">
-                        <iframe width="156" height="100" src="https://www.youtube.com/embed/FDEcIGWQoFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </a>
-                  </li>
-        
-                  <li class="option-image__item">
-                    <a  data-url="https://lipsum.app/id/5/1000x700">
-                        <iframe width="156" height="100" src="https://www.youtube.com/embed/FDEcIGWQoFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </a>
-                  </li>
-              </ul>
-        
-        
-            </div>
-        
-        
-        
+                  </div>
+            
+                  
+            
+                </div>
+            
+              </div>
+
           </div>
     </div>
 </div>
+
+
 
 
 
