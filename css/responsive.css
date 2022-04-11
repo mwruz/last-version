@@ -11,12 +11,21 @@
         overflow: hidden;
     }
 
-    .map {
+
+    .map-buttons {
         display: none;
     }
 
     .mobile-map {
         display: block !important;
+    }
+
+    .mobile-map-content {
+        flex-direction: column;
+    }
+
+    .map-wrapper {
+        width: 100% !important;
     }
 
     .body-active::before {

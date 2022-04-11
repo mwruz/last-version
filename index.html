@@ -457,68 +457,68 @@
         <div class="wrapper" style="margin: 0 auto;">
            <div class="container"> 
                  <h1 class="section__title">Interaktiv xarita</h1>
+
+                 <div class="map-buttons">
+                     <button type="button" class="map-button map-button-active">Hududiy Boshqarmalar</button>
+                     <button type="button" class="map-button">Interaktiv xarita</button>
+                 </div>
             </div>
-    
-          <h2 class="map-title"></h2>
-    
-    
-          <div class="map-main">
-    
-            <aside class="map-main__left">
-    
-              <div class="buttons-wrapper">
-            
-                <div class="buttons-group">
-                  <button class="button-active" id="birinchi">Ҳудудий органлар</button>
-                  <button id="ikkinchi">Суғориш такмоқлари</button>
-                  <button id="uchinchi">Насос ва суғориш қудуқлари</button>
-                  <button id="turtinchi">Суғориш меъёри</button>
-                  <button id="beshinchi">Суғориш</button>
-                </div>
-        
-              </div>
-    
-            </aside>
-    
-            <div id="container"></div>
-    
-            <aside class="map-main__right">
-    
-              <div class="buttons-wrapper">
-            
-                <div class="buttons-group">
-                  <button >Birinchi</button>
-                  <button >Ikkinchi</button>
-                  <button>Uchinchi</button>
-                  <button>To'rtinchi</button>
-                  <button>Beshinchi</button>
-                </div>
-        
-              </div>
-    
-            </aside>
-    
-    
-    
-          </div>
-          
           
         </div>
       </div>
 
+      <div class="interactive-map">
+        <h2 class="map-title"></h2>
+    
+    
+        <div class="map-main">
+  
+          <aside class="map-main__left">
+  
+            <div class="buttons-wrapper">
+          
+              <div class="buttons-group">
+                <button class="button-active" id="birinchi">Ҳудудий органлар</button>
+                <button id="ikkinchi">Суғориш такмоқлари</button>
+                <button id="uchinchi">Насос ва суғориш қудуқлари</button>
+                <button id="turtinchi">Суғориш меъёри</button>
+                <button id="beshinchi">Суғориш</button>
+              </div>
       
+            </div>
+  
+          </aside>
+  
+          <div id="container"></div>
+  
+          <aside class="map-main__right">
+  
+            <div class="buttons-wrapper">
+          
+              <div class="buttons-group">
+                <button >Birinchi</button>
+                <button >Ikkinchi</button>
+                <button>Uchinchi</button>
+                <button>To'rtinchi</button>
+                <button>Beshinchi</button>
+              </div>
+      
+            </div>
+  
+          </aside>
+  
+  
+  
+        </div>
+      </div>
 
-
-    </section>
-
-
-    <!-- START MOBILE INTERACTIVE MAP  -->
-
-    <section class="mobile-map">
+      <div class="mobile-map mobile-map-active">
         <div class="container">
 
-            <h2 class="section__title">Hududiy Boshqarmalar</h2>
-        
+            <h2 class="map-title">Hududiy boshqarmalar</h2>
+            
+          <div class="mobile-map-content">
+
             <div class="map-wrapper">
                 <svg id="map" version="1.1" viewBox="0 0 700 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     
@@ -550,37 +550,12 @@
         
                     <path class="map-highlight" fill="#3D7C9D" stroke="#fff" stroke-width="1" id="uz_su" d="M439.9,410.4 L441.2,409.5 L442.7,404.0 L447.7,398.9 L450.3,393.4 L454.6,391.5 L459.7,386.9 L460.6,381.6 L464.0,376.7 L467.8,374.1 L470.1,369.1 L472.1,367.7 L476.0,369.2 L477.1,365.4 L476.8,361.6 L474.8,356.1 L475.6,354.3 L481.3,352.6 L482.0,353.3 L488.6,353.8 L492.9,352.1 L495.9,353.1 L498.6,352.2 L502.2,357.7 L502.7,360.0 L500.6,362.7 L498.4,363.3 L499.0,366.0 L497.5,368.6 L498.4,371.5 L498.7,376.9 L500.2,379.1 L500.8,382.4 L504.8,387.4 L511.3,392.0 L512.8,395.7 L511.4,401.9 L508.7,408.1 L503.4,410.5 L501.9,416.1 L497.9,423.2 L493.6,428.4 L492.0,431.7 L490.9,437.3 L492.2,443.8 L490.8,450.1 L490.0,448.4 L484.3,446.9 L480.6,448.3 L479.6,446.1 L477.7,445.9 L474.0,449.2 L469.3,451.1 L467.4,451.0 L466.0,448.3 L462.3,446.4 L461.0,443.3 L457.0,441.1 L451.0,442.2 L445.4,442.7 L443.7,443.8 L439.1,442.7 L436.2,443.0 L435.1,441.2 L437.1,438.3 L434.7,434.5 L435.6,429.0 L435.3,420.5 L440.4,411.5 Z"></path>
         
-                    <style>
-
-                    .mobile-map {
-                        padding: 70px 0;
-                        display: none;
-                    }
-
-                     #map {
-                         width: 100%;
-                         height: auto;
-                     }
-        
-                     #map path {
-                         fill: rgb(124, 181, 236);
-                         cursor: pointer;
-                     }
-        
-                     #map path:hover {
-                        cursor: pointer;
-                        fill: rgba(48, 63, 149,0.7);
-                     }
-
-                     #map .path-active {
-                        fill: rgba(48, 63, 149,0.7);
-                     }
-                    </style>
                 </svg>
             </div>
 
 
             <div class="mobile-map__region">
+                <img src="mobile-map-img" alt="" width="320" height="250" style="margin-bottom: 15px;">
                 <h3 class="region-name"></h3>
                 <p>  
                     <span class="region-chairman__position"></span>
@@ -590,9 +565,55 @@
                 <a href="#" class="region-email"></a>
                 <a href="#" class="region-phone"></a>
             </div>
+          </div>
+
+
+            <style>
+
+                .mobile-map {
+                    padding: 70px 0;
+                }
+
+                .map-wrapper {
+                    width: 60%;
+                }
+
+                .mobile-map-content {
+                    display: flex;
+                }
+
+                 #map {
+                     width: 100%;
+                     height: auto;
+                 }
+    
+                 #map path {
+                     fill: rgb(124, 181, 236);
+                     cursor: pointer;
+                 }
+    
+                 #map path:hover {
+                    cursor: pointer;
+                    fill: rgba(48, 63, 149,0.7);
+                 }
+
+                 #map .path-active {
+                    fill: rgba(48, 63, 149,0.7);
+                 }
+                </style>
         </div>
+    </div>
+
+
+      
+
+
     </section>
 
+
+    <!-- START MOBILE INTERACTIVE MAP  -->
+
+   
 
     <!-- END OF MOBILE INTERACTIVE MAP  -->
 

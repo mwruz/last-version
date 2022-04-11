@@ -59,37 +59,28 @@ $('.main-image').slick({
 
     })
 
+// INTERACTIVE MAP 
+
+let buttons = document.querySelectorAll('.map-button');
+let firstMap = document.querySelector('.mobile-map');
+let secondMap = document.querySelector('.interactive-map'); 
 
 
-    // $('.links__list').slick({
-    //     dots: true,
-    //     speed: 300,
-    //     slidesToShow: 4,
-    //     slidesToScroll: 4,
-    //     responsive: [
-    //       {
-    //         breakpoint: 1024,
-    //         settings: {
-    //           slidesToShow: 3,
-    //           slidesToScroll: 3,
-    //           infinite: true,
-    //           dots: true
-    //         }
-    //       },
-    //       {
-    //         breakpoint: 1000,
-    //         settings: {
-    //           slidesToShow: 2,
-    //           slidesToScroll: 2,
-    //         }
-    //       },
-    //       {
-    //         breakpoint: 480,
-    //         settings: {
-    //           slidesToShow: 1,
-    //           slidesToScroll: 1
-    //         }
-    //       }
-    //     ]
-    //   });
+buttons.forEach((item, index) => {
+  item.addEventListener("click",() => {
+    if(index == 0) {
+      secondMap.classList.remove('interactive-map-active');
+      buttons[1].classList.remove('map-button-active');
+      firstMap.classList.add('mobile-map-active');
+      item.classList.add('map-button-active');
+    }
+
+    if(index == 1) {
+      firstMap.classList.remove('mobile-map-active');
+      buttons[0].classList.remove('map-button-active');
+      secondMap.classList.add('interactive-map-active');
+      item.classList.add('map-button-active');
+    }
+  })
+})
     
