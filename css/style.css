@@ -1125,7 +1125,6 @@ h1 {
 }
 
 .links__item a {
-    width: 280px;
     padding: 40px 25px;
     display: flex;
     flex-direction: column;
@@ -1183,7 +1182,11 @@ h1 {
 }
 
 .links__list {
-    padding-left: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
 }
 
 
@@ -1279,6 +1282,8 @@ h1 {
 }
 
 .footer__connect input {
+    height: 40px;
+    width: 250px;
     padding: 7.5px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -1287,12 +1292,33 @@ h1 {
 }
 
 .footer__connect button {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     border: none;
     cursor: pointer;
+    background-color:#303F95;
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer__connect button i {
+    transition: all 0.3s ease;
+}
+
+.footer__connect button:hover i {
+    animation: goRight 300ms ease-in-out forwards;
+}
+
+@keyframes goRight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
 }
 
 /* END OF FOOTER  */
